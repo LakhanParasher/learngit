@@ -9,7 +9,7 @@ public class javaLambda_Expression {
         Drawable obj =new Drawable() {
             @Override
             public void method1() {
-                System.out.println("this is the method1");
+                System.out.println("this is the method1"+"\n"+width);
             }
 
         };
