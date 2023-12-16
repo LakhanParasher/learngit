@@ -3,6 +3,9 @@ class abc{
     int x=30;
 
 }
+class b{
+    int x=21;
+}
 public class A{
 
     public static void main(String[] args) {
@@ -16,6 +19,10 @@ public class A{
 obj2.x=10;
 // printing the value of x using reference variable obj1
         System.out.println("The value of x " +obj1.x);
-
+//deep copy
+        b obj3=new b();
+        b obj4 =new b();
+        obj4.x=12;
+        System.out.println("the value of x "+ obj3.x);
     }
 }
