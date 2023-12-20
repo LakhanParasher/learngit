@@ -1,9 +1,6 @@
 package Filehandling;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
 import java.util.Scanner;
 
 public class Main {
@@ -31,6 +28,25 @@ public class Main {
             System.out.println("I have delete this file "+myfile.getName());
         }else {
             System.out.println("some error occured ");
+        }
+//        file handling using byte stream
+        FileInputStream inputStream=null;
+        FileOutputStream outputStream=null;
+        try {
+            inputStream=new FileInputStream("input.txt");
+            outputStream=new FileOutputStream("output.txt");
+
+        int c;
+        while ((c =inputStream.read())!=-1){
+            outputStream.write(c);
+            }
+        }finally{
+            if(inputStream!=null){
+                inputStream.close();
+            }if (outputStream!=null){
+                outputStream.close();
+            }
+
         }
 
 }
