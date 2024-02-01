@@ -32,6 +32,16 @@ public class Main {
         }
 
     }
+    static boolean isArmstrong(int n){
+        int original =n;
+        int sum =0;
+        while (n>0){
+            int rem =n%10;
+            n/=10;
+            sum = sum+rem*rem*rem;
+        }
+        return  sum ==original;
+    }
 
     public static void main(String[] args) {
 //Write a program to find the sum of elements in an array
@@ -46,7 +56,7 @@ public class Main {
 //        sumOfDigits(12);
 //        System.out.println(sumOfDigits(12));
 printPat(3);
-
+        System.out.println(isArmstrong(153));
     }
 }
 

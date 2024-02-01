@@ -203,7 +203,7 @@ public class day_3 {
 //        15 diamond star pattern hallow
         int n = 5;
         for (int i = 1; i <= n; i++) {
-            for (int space = n; space > i; space--) {
+            for (int space = i; space < n; space++) {
                 System.out.print(" ");
             }
             System.out.print("*");
@@ -221,7 +221,7 @@ public class day_3 {
 
     }
     for (int i=n-1;i>=1;i--){
-             for(int space=n;space>i;space--){
+             for(int space=i;space<n;space++){
                  System.out.print(" ");
              }
         System.out.print("*");

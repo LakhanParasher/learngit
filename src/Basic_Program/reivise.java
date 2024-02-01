@@ -4,31 +4,32 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class reivise {
-    //    public static void checkPrime(int n){
-//        int m=0, flag=0;
-//        m=n/2;
-//        if(n==0||n==1){
-//            System.out.println(n+"it is not prime number ");
-//        }else{
-//            for( int i=2;i<=m;i++){
-//                if(n%i==0){
-//                    System.out.println(n+"it is not prime number ");
-//                    flag=1;
-//                    break;
-//                }
-//
-//            }
-//            if(flag==0){
-//                System.out.println(n+"it is prime number");
-//            }
-//        }
-//    }boo
-    static boolean isSorted(int[] arr) {
-        for (int i = 0; i < arr.length-1; i++)
-            if (arr[i] < arr[i - 1])
-                return false;
+    public static void checkPrime(int n) {
+        int m = 0, flag = 0;
+        m = n / 2;
+        if (n == 0 || n == 1) {
+            System.out.println(n + "it is not prime number ");
+        } else {
+            for (int i = 2; i <= m; i++) {
+                if (n % i == 0) {
+                    System.out.println(n + "it is not prime number ");
+                    flag = 1;
+                    break;
+                }
 
-        return true;
+            }
+            if (flag == 0) {
+                System.out.println(n + "it is prime number");
+            }
+        }
+//    }boo
+//    static boolean isSorted(int[] arr) {
+//        for (int i = 0; i < arr.length-1; i++)
+        //
+//                   if (arr[i] < arr[i - 1])
+//                return false;
+//
+//        return true;
 
 
     }
@@ -65,19 +66,19 @@ public class reivise {
         // write a program of LCM
 //
         //write a program of factorial number
-//        Scanner sc =new Scanner(System.in);
-//        int n=sc.nextInt();
-//        int fact=1;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int fact = 1;
 //
-//        for (int i=1;i<=n;i++) {
-//            fact = fact * i;
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
 //        }
-//            System.out.println(fact);
+            System.out.println(fact);
 // Check for prime number
 
 
-//        checkPrime(8);
-//        checkPrime(7);
+//            checkPrime(8);
+//            checkPrime(7);
 //        sum of array elemtents
 //
 //        Scanner sc =new Scanner(System.in);
@@ -108,7 +109,8 @@ public class reivise {
 //            }
 //        }
 
-        int arr[] = {3, 5, 7, 1};
-        System.out.println(isSorted(arr));
+//        int arr[] = {3, 5, 7, 1};
+//        System.out.println(isSorted(arr));
+        }
     }
 }
